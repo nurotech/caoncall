@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700%7CGoogle+Sans:400,500%7CProduct+Sans:400&amp;lang=">
 </head>
 <body>
@@ -362,7 +363,25 @@ Kabir’s Bakery
 </div>
 </div>
 </div>
-
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+	  $('#datepicker').datepicker({
+		  	//minDate:0,
+		    dateFormat: 'dd-mm-yy',
+		    onSelect: function(dateText){
+		     $("#time_div").slideDown("slow");
+		    }
+		});
+	  $('#datepicker1').datepicker({
+		    dateFormat: 'dd-mm-yy',
+		    //minDate:0,
+		    onSelect: function(dateText){
+		     $("#time_div").slideDown("slow");
+		    }
+		});
+  } );
+  </script>
  <script>
 $(document).ready(function () {
 var cat_id = document.getElementById('cat_id');

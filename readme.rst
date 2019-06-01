@@ -1,29 +1,24 @@
 ###################
-What is CodeIgniter
+CAonCall - Codeigniter Based PHP Project
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+CAonCALL.com is a project where users can ask their questions directly to charter accountants and lawyers
+the project has mainly three interfaces one is for the users second is for the admin and third for the experts.
+the user interface will have options to answer those questions and check the pending queries.
 
 *******************
 Release Information
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+This repo contains in-development code for future releases. To view the lastest updated changes
+please visit the `CAonCAll Project Development
+<https://deepak.excapital.in/caoncall_pallavi/>`_ page.
 
 **************************
 Changelog and New Features
 **************************
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+The project is in beta development phase.So changelog are not recorded yet.
 
 *******************
 Server Requirements
@@ -34,6 +29,12 @@ PHP version 5.6 or newer is recommended.
 It should work on 5.3.7 as well, but we strongly advise you NOT to run
 such old versions of PHP, because of potential security and performance
 issues, as well as missing features.
+
+***************
+Orgnization
+***************
+
+Yogya Infomedia Ltd
 
 ************
 Installation

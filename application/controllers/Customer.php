@@ -28,17 +28,36 @@ class Customer extends CI_Controller {
       
         $sid=$this->input->get('sId',true);
         
+        
         $service_id=$this->cust->getService($sid);
-              echo $html='<div="col-md-12">
-              <table class="table table-striped"><tr> <p style="text-align:center;">Please Select Package</p></tr>';
-					                    if(!empty($service_id)){
-        								foreach($service_id as $sub_cat1=>$scat1){
-        							    echo'<tr><td><input type="radio" id="service_package" name="package_id" value="'.$scat1['id'].'" style="height: 21px;
-              width: 21px;"></td><td>'.$scat1['name'].'</td><td>'.$scat1['amount'].'</td><td>'.$scat1['des1'].'</td><td>'.$scat1['des2'].'</td></tr>';
+        
+        foreach($service_id as $sub_cat1=>$scat1){
+            
+            if($scat1['flag']==1)
+            {
+               echo $html ='   <div class="form-body">
+                    <div class="form-group">
+                      <label for="eventInput1">Date</label>
+                      <input autocomplete="off" value="" type="text" id="datepicker1" name="date1" class="form-control" placeholder="MM-DD-YYYY">
+                    </div>
+                  </div>';
+            }
+            else {
+                {
+                    echo $html=no;
+                }
+            }
+        }
+//               echo $html='<div="col-md-12">
+//               <table class="table table-striped"><tr> <p style="text-align:center;">Please Select Package</p></tr>';
+// 					                    if(!empty($service_id)){
+//         								foreach($service_id as $sub_cat1=>$scat1){
+//         							    echo'<tr><td><input type="radio" id="service_package" name="package_id" value="'.$scat1['id'].'" style="height: 21px;
+//               width: 21px;"></td><td>'.$scat1['name'].'</td><td>'.$scat1['amount'].'</td><td>'.$scat1['des1'].'</td><td>'.$scat1['des2'].'</td></tr>';
         								
-        								}
-        								echo'</div></table>';
-        							}
+//         								}
+//         								echo'</div></table>';
+//         							}
     }
 
   

@@ -1,4 +1,4 @@
-<?php
+ <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class CustomerModal extends CI_Model{
@@ -16,9 +16,11 @@ class CustomerModal extends CI_Model{
     }
     
     function getService($sid){
-    
-      $this->db->where("service_id",$sid);
-        return $this->db->get('service_package')->result_array();
+        $this->db->where("id",$sid);
+        return $this->db->get('services')->result_array();
+        
+//       $this->db->where("service_id",$sid);
+//         return $this->db->get('service_package')->result_array();
     }
 
  function add($query_data){
